@@ -1,0 +1,20 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args){
+        Scanner leer = new Scanner(System.in);
+        int  num = leer.nextInt();
+        
+            int  fact = fact(num);
+            System.out.println(fact);
+    }
+    static int fact(int n){
+        
+        if(n<50){
+            return 2;
+        }
+        return fact(n-1)+(fact(n-5)*2);
+        
+    }
+    
+}
